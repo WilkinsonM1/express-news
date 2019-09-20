@@ -1,0 +1,29 @@
+{
+  "name": "express-news",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "node": "^12.10.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilkinsonM1/express-news.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WilkinsonM1/express-news/issues"
+  },
+  "homepage": "https://github.com/WilkinsonM1/express-news#readme"
+}
