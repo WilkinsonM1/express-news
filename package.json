@@ -9,6 +9,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "node": "^12.10.0",
+    "nodemon": "^1.19.3",
     "request": "^2.88.0"
   },
   "devDependencies": {},
