@@ -131,7 +131,8 @@ getNews.addEventListener('click', () => {
         let textwrapper = document.createElement('div')
         textwrapper.innerHTML = ""
         newsCard.appendChild(textwrapper)
-        let titleNews = document.createElement('p')
+        textwrapper.setAttribute("class", "textwrapper")
+        let titleNews = document.createElement('h2')
         titleNews.textContent = data[article].title
         textwrapper.appendChild(titleNews)
         let descriptionNews = document.createElement('p')
@@ -143,6 +144,7 @@ getNews.addEventListener('click', () => {
         textwrapper.appendChild(linkNews)
         let imgNews = document.createElement('div')
         newsCard.appendChild(imgNews)
+        imgNews.setAttribute("class", "imgNews")
         let img = document.createElement('img')
         img.innerHTML = ''
         newsCard.appendChild(img)
@@ -153,26 +155,5 @@ getNews.addEventListener('click', () => {
     
     //needs a catch in case our server is down
 })
-
-
-
-// <div class="news-card">
-
-// <div class="textwrapper">
-//     <p class="titleNews">"Binance.US Opens Account Registration for Puerto Rico Residents"</p>
-//     <p class="descriptionNews">"The United States-based branch of cryptocurrency exchange Binance,
-//         “Binance.US,” opened account registration and verification services for residents of Puerto
-//         Rico"</p>
-//         <a class="linkNews" href="https://cointelegraph.com/news/binanceus-opens-account-registration-for-puerto-rico-residents">Link</a>
-//     </div>
-
-// <div class="imgNews">
-//     <img src="https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy82MWY1MDQwOWQ3MTIxZjcyYmViMTljMTc5NDMyZTJmNy5qcGc=.jpg
-// https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy82MWY1MDQwOWQ3MTIxZjcyYmViMTljMTc5NDMyZTJmNy5qcGc=.jpg
-// " alt="" srcset="">
-// </div>
-
-
-// </div>
 
 
