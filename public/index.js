@@ -24,15 +24,15 @@ getNews.addEventListener('click', async () => {
     
     loading.textContent = "getting the news..."
     
-    let responce = await fetch(`http://localhost:3000/news?category=${inputNews}`)
-    let data = await responce.json()
+    let response = await fetch(`http://localhost:3000/news?category=${inputNews.value}`)
+    let data = await response.json()
 
     // let data = testData  // TEMP!!!
     console.log(' we should have returned data as an array containing 5 objects')
     console.table(data)
 
 
-    //create elements inside the DOM newsWrapper
+    // create elements inside the DOM newsWrapper
     for(article=0; article<data.length; article++){
         console.log(`article number  ${article}`)
         let newsCard = document.createElement('div')
