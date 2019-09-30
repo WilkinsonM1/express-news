@@ -31,7 +31,9 @@ getNews.addEventListener('click', async () => {
     console.log(' we should have returned data as an array containing 5 objects')
     console.table(data)
 
-
+    loading.textContent = ""
+    newsWrapper.textContent = ""
+    
     // create elements inside the DOM newsWrapper
     for(article=0; article<data.length; article++){
         console.log(`article number  ${article}`)
