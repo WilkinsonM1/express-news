@@ -117,26 +117,30 @@ getNews.addEventListener('click', () => {
     console.log(' we should have returned data as an array containing 5 objects')
     console.table(data)
 
-    //create Elements
-    data.forEach(article => {
-        
+    console.log(`data[0].title ${data[0].title}`)
+    console.log(`data[0].descr  ${data[0].description}`)
+    console.log(`data[0].urltoimg  ${data[0].urlToImage}`)
+    console.log(`data[0].url  ${data[0].url}`)
 
+    //create Elements
+    for(article=0; article<data.length; article++){
+        console.log(`article number  ${article}`)
         let newsCard = document.createElement('div')
         newsCard.innerHTML = ""
         newsWrapper.appendChild(newsCard)
         let titleNews = document.createElement('div')
-        titleNews.innerHTML = "title"
+        titleNews.textContent = data[article].title
         newsCard.appendChild(titleNews)
         let descriptionNews = document.createElement('div')
-        descriptionNews.innerHTML = "descr"
+        descriptionNews.textContent = data[article].description
         newsCard.appendChild(descriptionNews)
         let imgNews = document.createElement('div')
-        imgNews.innerHTML = "img url"
+        imgNews.textContent = data[article].urlToImage
         newsCard.appendChild(imgNews)
         let linkNews = document.createElement('div')
-        linkNews.innerHTML = "link url"
+        linkNews.textContent = data[article].url
         newsCard.appendChild(linkNews)
-    })
+    }
 
 
     
