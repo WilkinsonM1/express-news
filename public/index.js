@@ -33,7 +33,7 @@ getNews.addEventListener('click', async () => {
 
     loading.textContent = ""
     newsWrapper.textContent = ""
-    
+
     // create elements inside the DOM newsWrapper
     for(article=0; article<data.length; article++){
         console.log(`article number  ${article}`)
@@ -59,7 +59,7 @@ getNews.addEventListener('click', async () => {
         imgNews.setAttribute("class", "imgNews")
         let img = document.createElement('img')
         img.innerHTML = ''
-        newsCard.appendChild(img)
+        imgNews.appendChild(img)
         img.setAttribute("src", data[article].urlToImage)
     }
 
