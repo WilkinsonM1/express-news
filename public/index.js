@@ -120,9 +120,22 @@ getNews.addEventListener('click', () => {
     //create Elements
     data.forEach(article => {
         
+
         let newsCard = document.createElement('div')
-        newsCard.innerHTML = "TEST"
+        newsCard.innerHTML = ""
         newsWrapper.appendChild(newsCard)
+        let titleNews = document.createElement('div')
+        titleNews.innerHTML = "title"
+        newsCard.appendChild(titleNews)
+        let descriptionNews = document.createElement('div')
+        descriptionNews.innerHTML = "descr"
+        newsCard.appendChild(descriptionNews)
+        let imgNews = document.createElement('div')
+        imgNews.innerHTML = "img url"
+        newsCard.appendChild(imgNews)
+        let linkNews = document.createElement('div')
+        linkNews.innerHTML = "link url"
+        newsCard.appendChild(linkNews)
     })
 
 
