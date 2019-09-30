@@ -58,9 +58,10 @@ getNews.addEventListener('click', async () => {
         linkNews.setAttribute("href", data[article].url)
         textwrapper.appendChild(linkNews)
         linkNews.setAttribute("class", "linkNews")
-        let imgNews = document.createElement('div')
+        let imgNews = document.createElement('a')
         newsCard.appendChild(imgNews)
         imgNews.setAttribute("class", "imgNews")
+        imagNews.setAttribute("href", data[article].url)
         let img = document.createElement('img')
         img.innerHTML = ''
         imgNews.appendChild(img)
