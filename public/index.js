@@ -40,6 +40,7 @@ getNews.addEventListener('click', async () => {
         let newsCard = document.createElement('div')
         newsCard.innerHTML = ""
         newsWrapper.appendChild(newsCard)
+        newsCard.setAttribute("class", "news-card")
         let textwrapper = document.createElement('div')
         textwrapper.innerHTML = ""
         newsCard.appendChild(textwrapper)
