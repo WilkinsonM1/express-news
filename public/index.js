@@ -48,13 +48,16 @@ getNews.addEventListener('click', async () => {
         let titleNews = document.createElement('h2')
         titleNews.textContent = data[article].title
         textwrapper.appendChild(titleNews)
+        titleNews.setAttribute("class", "titleNews")
         let descriptionNews = document.createElement('p')
         descriptionNews.textContent = data[article].description
         textwrapper.appendChild(descriptionNews)
+        descriptionNews.setAttribute("class", "descriptionNews")
         let linkNews = document.createElement('a')
         linkNews.textContent = 'LINK'
         linkNews.setAttribute("href", data[article].url)
         textwrapper.appendChild(linkNews)
+        linkNews.setAttribute("class", "linkNews")
         let imgNews = document.createElement('div')
         newsCard.appendChild(imgNews)
         imgNews.setAttribute("class", "imgNews")
