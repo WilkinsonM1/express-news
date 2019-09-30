@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 * {
-  margin: 0px;
-  padding: 0px;
+
   text-align: center;
 }
 section {
@@ -63,26 +62,19 @@ section {
   }
   .news-card{
 	background:rgba(162, 166, 177, 0.849);
-	display: flex;
+  display: flex;
+  flex-direction: column;
 	font-size: 1.5em;
   }
-  .textWrapper{
+  .textwrapper{
 	border-bottom: 1px solid rgb(5, 5, 5);
   }
-  .imgNews img {
+  
+  .imgNews img{
 	width: 100%;
 	margin-right: auto;
 	height: 100%;
-  
-
   }
-
-
-  .linkNews{
-
-  }
-
-
 
   #news-info {
     margin: 0 auto;
@@ -96,3 +88,17 @@ section {
     font-size: 2em;
     display: inline-block;
   }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .textwrapper {
+      font-size: 50%;
+    }
+    section {
+      width: 100%;
+      height: 100%;
+    }
+    #inputNews {
+      font-size: 0.60em;
+      font-weight: bold;
+    }
+    }
